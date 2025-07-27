@@ -138,7 +138,7 @@ const configureCors = () => {
   
   const corsOptions = {
     origin: (origin, callback) => {
-      const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001','*'];
+      const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001','*','https://formbuilderfrontend.netlify.app'];
       
       // Allow requests with no origin (mobile apps, etc.)
       if (!origin) return callback(null, true);
