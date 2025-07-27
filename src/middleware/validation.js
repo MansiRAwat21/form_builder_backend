@@ -138,9 +138,7 @@ const configureCors = () => {
   
   const corsOptions = {
     origin: (origin, callback) => {
-      const allowedOrigins = process.env.CORS_ORIGIN ? 
-        process.env.CORS_ORIGIN.split(',') : 
-        ['http://localhost:3000', 'http://localhost:3001'];
+      const allowedOrigins = process.env.CORS_ORIGIN 
       
       // Allow requests with no origin (mobile apps, etc.)
       if (!origin) return callback(null, true);
